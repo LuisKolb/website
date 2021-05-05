@@ -8,7 +8,7 @@ export default function Home() {
                 <title>{siteTitle}</title>
             </Head>
             {/* Welcome Section */}
-            <section className="rounded-md p-4 mx-auto mb-4 bg-gray-600">Welcome to my Site! Feel free to contact me with any questions 🙂</section>
+            <section className="rounded-md p-4 mx-auto mb-4 bg-gray-600">Welcome to my Site! I am a 23 year old CS/Data Science Student. Feel free to contact me at the links below my picture 🙂</section>
 
             {/* Current Projects */}
             <section className="text-lg pb-4 space-y-2">
@@ -29,14 +29,14 @@ export default function Home() {
                         Austriatech
                     </a>
                 </div>
-                <div className="ml-4">&#62; Studying Medical Computer Science @ TU Vienna</div>
+                <div className="ml-4">&#62; Studying for my Master's Degree in Data Science @ TU Vienna</div>
                 {/*todo: replace link*/}
                 <div className="ml-4">
                     &#62; Interested in Data Science? Check out my
                     <a href="https://github.com/LuisKolb/sideline" className="ml-2 text-blue-300" target="_blank" rel="noopener noreferrer">
                         Bachelor's Thesis
                     </a>
-                    !
+                    ! ()
                 </div>
             </section>
 
@@ -47,7 +47,7 @@ export default function Home() {
                     <div className="bg-red-400 rounded-full flex-grow h-1 my-auto ml-6"></div>
                 </div>
 
-                <div className="ml-4">&#62; Bsc. Medical Computer Science from TU Vienna</div>
+                <div className="ml-4">&#62; BSc Medical Computer Science from TU Vienna</div>
                 <div className="ml-4">
                     &#62; Both front desk and back office experience @
                     <a href="http://www.traveldoc.at/" className="mx-2 text-blue-300" target="_blank" rel="noopener noreferrer">
@@ -71,14 +71,17 @@ export default function Home() {
                     <div className="bg-red-400 rounded-full flex-grow h-1 my-auto ml-6"></div>
                 </div>
 
-                <div className="ml-4">&#62; Webdev - Next.js, Vue, Angular, Symfony, Django, Spring</div>
+                <div className="ml-4">&#62; Full Stack Webdev - Next.js, Vue, Angular, Symfony, Django, Spring</div>
+                <div className="ml-4">&#62; Google Firebase, a Backend-as-a-Service</div>
                 <div className="ml-4">&#62; Mobile Development on Android</div>
+                <div className="ml-4">&#62; Several other languages like Python, Java, SQL, MATLAB</div>
                 <div className="ml-4">&#62; Fluent in german and english, some italian</div>
                 <div className="ml-4">&#62; Experience assisting customers and co-workers</div>
                 <div className="ml-4">&#62; Great team player</div>
             </section>
 
-            {/* Other Random Stuff */}
+            {/* Other Random Stuff Blog? */}
+            {/* 
             <section className="text-lg pt-4 space-y-2">
                 <div className="flex flex-row">
                     <div className="text-2xl">Blog Posts</div>
@@ -90,6 +93,7 @@ export default function Home() {
                 <div className="ml-4">&#62; ┬─┬ノ( º _ ºノ)</div>
                 <div className="ml-4">&#62; 😥👉👈</div>
             </section>
+            */}
         </Layout>
     );
 }

@@ -21,7 +21,7 @@ export default function Layout({ children, home }) {
 
                 <header className="flex flex-col col-span-4 lg:col-span-1 lg:h-screen sticky items-start mx-auto p-8 lg:p-16 space-y-8 bg-gray-700">
                     <div className="flex flex-row items-center lg:flex-col lg:space-y-4 space-x-4 lg:space-x-0">
-                        <Image priority src="/images/bossman.jpg" className="rounded-full" height={144} width={144} alt={name} />
+                        <Image priority src="/images/portrait.jpg" className="rounded-full" height={144} width={144} alt={name} />
                         <div className="text-center text-white text-md w-full">
                             <div className="text-3xl mb-2 text-red-400">Luis Kolb</div>
                             {chosenGreeting}
