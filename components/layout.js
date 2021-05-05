@@ -13,10 +13,14 @@ export default function Layout({ children, home }) {
             <div className="max-w-7xl min-w-min ml-auto mr-auto grid grid-cols-4 w-full">
                 <Head>
                     <link rel="icon" href="/favicon.ico" />
-                    <meta name="description" content="Luis Kolb" />
-                    <meta property="og:image" content={`https://og-image.vercel.app/${encodeURI(siteTitle)}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`} />
-                    <meta name="og:title" content={siteTitle} />
+                    <meta name="description" content="Luis Kolb's Web Presence - Web Design, Data Science" />
+                    <meta property="og:description" content="Luis Kolb's Web Presence"></meta>
+                    <meta property="og:title" content="Hey There!" />
+                    <meta property="og:url" content="https://www.luiskolb.at/" />
+                    <meta property="og:image" content={`https://og-image.vercel.app/${encodeURI('Luis Kolb | Hey there!')}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`} />
+                    <meta property="og:type" content="website" />                    
                     <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:creator" content="@dieLuisch" />
                 </Head>
 
                 <header className="flex flex-col col-span-4 lg:col-span-1 lg:h-screen sticky items-start mx-auto p-8 lg:p-16 space-y-8 bg-gray-700">
