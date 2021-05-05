@@ -75,7 +75,7 @@ export default function Home() {
                 <div className="ml-4">&#62; Google Firebase, a Backend-as-a-Service</div>
                 <div className="ml-4">&#62; Mobile Development on Android</div>
                 <div className="ml-4">&#62; Several other languages like Python, Java, SQL, MATLAB</div>
-                <div className="ml-4">&#62; Fluent in german and english, some italian</div>
+                <div className="ml-4">&#62; Fluent in German and English, some Italian</div>
                 <div className="ml-4">&#62; Experience assisting customers and co-workers</div>
                 <div className="ml-4">&#62; Great team player</div>
             </section>
