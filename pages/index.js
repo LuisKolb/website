@@ -36,7 +36,7 @@ export default function Home() {
                     <a href="https://github.com/LuisKolb/sideline" className="ml-2 text-blue-300" target="_blank" rel="noopener noreferrer">
                         Bachelor's Thesis
                     </a>
-                    ! ()
+                    !
                 </div>
             </section>
 
