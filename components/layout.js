@@ -2,12 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-const name = "Luis Kolb";
-const greetings = ["Hey there!", "What's up?", "Hello there!", "( ^_^)／", "(≧▽≦)", "👋"];
-const chosenGreeting = greetings[Math.floor(Math.random() * greetings.length)];
-export const siteTitle = "Luis Kolb | " + chosenGreeting;
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, name, greeting }) {
     return (
         <div className="bg-gray-700">
             <div className="max-w-7xl min-w-min ml-auto mr-auto grid grid-cols-4 w-full">
@@ -25,10 +21,10 @@ export default function Layout({ children, home }) {
 
                 <header className="flex flex-col col-span-4 lg:col-span-1 lg:h-screen sticky items-start mx-auto p-8 lg:p-16 space-y-8 bg-gray-700">
                     <div className="flex flex-row items-center lg:flex-col lg:space-y-4 space-x-4 lg:space-x-0">
-                        <Image priority src="/images/portrait.jpg" className="rounded-full" height={144} width={144} alt={name} />
+                        <Image priority src="/images/portrait.jpg" className="rounded-full" height={144} width={144} alt={'Photo of the site owner.'} />
                         <div className="text-center text-white text-md w-full">
                             <div className="text-3xl mb-2 text-red-400">Luis Kolb</div>
-                            {chosenGreeting}
+                            {greeting}
                         </div>
                     </div>
 
