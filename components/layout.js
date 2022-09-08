@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-export default function Layout({ children, home, name, greeting }) {
+function Layout({ children, home, name, greeting }) {
     return (
         <div className="bg-gray-700">
             <div className="max-w-7xl min-w-min ml-auto mr-auto grid grid-cols-4 w-full">
@@ -59,3 +59,5 @@ export default function Layout({ children, home, name, greeting }) {
         </div>
     );
 }
+
+export default Layout
