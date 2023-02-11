@@ -2,6 +2,12 @@
 
 Built with Next.js and Tailwind CSS.
 
+## Setting up for local development
+
+```bash
+npm install
+```
+
 ## Running the server
 
 ```bash

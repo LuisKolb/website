@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-function Layout({ children, home, name, greeting }) {
+function Layout({ children, home, name, greeting, subtGreeting }) {
     return (
         <div className="bg-gray-700">
             <div className="max-w-7xl min-w-min ml-auto mr-auto grid grid-cols-4 w-full">
@@ -25,6 +25,8 @@ function Layout({ children, home, name, greeting }) {
                         <div className="text-center text-white text-md w-full">
                             <div className="text-3xl mb-2 text-red-400">Luis Kolb</div>
                             {greeting}
+                            <br></br>
+                            {subtGreeting}
                         </div>
                     </div>
 
