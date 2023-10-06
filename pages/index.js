@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layout";
-//import { useEffect, useState } from 'react'
-
+import Image from "next/image";
 
 function Home() {
 
@@ -9,13 +8,6 @@ function Home() {
     const greeting = "Hey there! 👋"
     const subtGreeting = "👇 contact me here 👇"
     const siteTitle = "luiskolb.at | 👋"
-    {/* retired randomized greeting code 
-    const greetings = ["Hey there!", "What's up?", "Hello there!", "( ^_^)／", "(≧▽≦)"];
-
-    const [greeting, setGreeting] = useState('👋')
-    const [siteTitle, setSiteTitle] = useState(name + ' | ' + greeting)
-    useEffect(() => setGreeting(greetings[Math.floor(Math.random() * greetings.length)]))
-    */}
 
     return (
         <Layout home name={name} greeting={greeting} subtGreeting={subtGreeting}>
@@ -23,7 +15,7 @@ function Home() {
                 <title>{siteTitle}</title>
             </Head>
             {/* Welcome Section */}
-            <section className="rounded-md p-4 mx-auto mb-4 bg-gradient-to-r to-red-500 from-indigo-500">Welcome to my corner of the internet! I'm Luis, 25 years old, and currently working on my Master's degree in Data Science. Feel free to reach out at the links below my picture 🙂</section>
+            <section className="rounded-md p-4 mx-auto mb-4 bg-gradient-to-r to-red-500 from-indigo-500">Welcome to my corner of the internet! I'm Luis, 26 years old, and currently working on my Master's degree in Data Science. Feel free to reach out at the links below my picture 🙂 I'd love to hear from you!</section>
 
             {/* Current Projects */}
             <section className="text-lg pb-4 space-y-2">
@@ -42,19 +34,23 @@ function Home() {
                     &#62;
                     <img src="/icons/vuejs.svg" className="inline h-5 w-5 ml-2" alt="vuejs"></img> + 🔥 + 🌬
                     <a href="https://social-app-ddf21.web.app/" className="mx-2 text-blue-300" target="_blank" rel="noopener noreferrer">
-                        Webapp with live chat, a kanban board and <div className="inline italic">The Oracle</div>
+                        Webapp with live chat, a kanban board
+                    </a>
+                    and 
+                    <a href="https://social-app-ddf21.web.app/oracle" className="mx-2 text-blue-300" target="_blank" rel="noopener noreferrer">
+                        <span className="inline italic">The Oracle</span>
                     </a>
                 </div>
                 <div className="ml-4">&#62; Studying for my Master's Degree in Data Science @ TU Vienna</div>
                 <div className="ml-4">
-                    &#62; 1st Level Support @
+                    &#62; IT-Department @
                     <a href="https://www.austriatech.at/" className="mx-2 text-blue-300" target="_blank" rel="noopener noreferrer">
-                        Austriatech
+                        AustriaTech
                     </a>
                 </div>
                 {/*todo: replace link*/}
                 <div className="ml-4">
-                    &#62; Interested in Data Science? Check out my
+                    &#62; Interested in Data Science? Check out the Jupyter extension I developed for my
                     <a href="https://github.com/LuisKolb/sideline" className="ml-2 text-blue-300" target="_blank" rel="noopener noreferrer">
                         Bachelor's Thesis
                     </a>
@@ -105,19 +101,22 @@ function Home() {
             </section>
 
             {/* Other Random Stuff Blog soon? */}
-            {/* 
             <section className="text-lg pt-4 space-y-2">
                 <div className="flex flex-row">
-                    <div className="text-2xl">Blog Posts</div>
+                    <div className="text-2xl">Other Cool Stuff</div>
                     <div className="bg-red-400 rounded-full flex-grow h-1 my-auto ml-6"></div>
+                </div>
+
+                <div className="ml-4">
+                    &#62; I beat Factorio: Space Exploration! ⚙️
+                    <Image src="/images/factorio-se-victory.png" width={1121} height={955} layout="responsive" className=" rounded-md" />
                 </div>
 
                 <div className="ml-4">&#62; (╯°□°)╯︵ ┻━┻</div>
                 <div className="ml-4">&#62; ...</div>
                 <div className="ml-4">&#62; ┬─┬ノ( º _ ºノ)</div>
-                <div className="ml-4">&#62; 😥👉👈</div>
+                <div className="ml-4">&#62; Just the Spaceship ending though... I'll get to the Gate ending someday, I'm sure.</div>
             </section>
-            */}
         </Layout>
     );
 }
