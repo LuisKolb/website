@@ -15,7 +15,7 @@ function Home() {
                 <title>{siteTitle}</title>
             </Head>
             {/* Welcome Section */}
-            <section className="rounded-md p-4 mx-auto mb-4 bg-gradient-to-r to-red-500 from-indigo-500">Welcome to my corner of the internet! I'm Luis, 26 years old, and currently working on my Master's degree in Data Science. Feel free to reach out at the links below my picture 🙂 I'd love to hear from you!</section>
+            <section className="rounded-md p-4 mx-auto mb-4 bg-gradient-to-r to-red-500 from-indigo-500">Welcome to my corner of the internet! I'm Luis, 27 years old, and just finished my Master's degree in Data Science. Feel free to reach out at the links below my picture 🙂 I'd love to hear from you!</section>
 
             {/* Current Projects */}
             <section className="text-lg pb-4 space-y-2">
@@ -23,9 +23,25 @@ function Home() {
                     <div className="text-2xl">Current Projects</div>
                     <div className="bg-red-400 rounded-full flex-grow h-1 my-auto ml-6"></div>
                 </div>
+
+                <div className="ml-4">&#62;<span className=" text-red-400 ml-2">NEW</span> Just finished my Master's Degree in Data Science @ TU Vienna</div>
+                <div className="ml-4">&#62;<span className=" text-red-400 ml-2">NEW</span><a href="https://doi.org/10.34726/hss.2024.118705" className="ml-1 text-blue-300" target="_blank" rel="noopener noreferrer">Check out my thesis!</a></div>
+                
+                <div className="ml-4">
+                    &#62; Currently IT-Specialist - Data and Systems @
+                    <a href="https://www.austriatech.at/" className="mx-2 text-blue-300" target="_blank" rel="noopener noreferrer">
+                        AustriaTech
+                    </a>
+                </div>
+                <div className="ml-4">
+                    &#62; Interested in Data Science? Check out the Jupyter extension I developed for my
+                    <a href="https://github.com/LuisKolb/sideline" className="ml-2 text-blue-300" target="_blank" rel="noopener noreferrer">
+                        Bachelor's Thesis
+                    </a>
+                    !
+                </div>
                 <div className="ml-4">
                     &#62;
-                    <span className=" text-red-400 ml-2">*NEW*</span>
                     <a href="https://charcut.vercel.app/" className="ml-2 text-blue-300" target="_blank" rel="noopener noreferrer">
                         CharCut online
                     </a> - easily compare translations, for example <span className="underline">machine-translated text</span> vs. <span className="underline">human-translated text</span>! More info on the site.
@@ -40,21 +56,6 @@ function Home() {
                     <a href="https://social-app-ddf21.web.app/oracle" className="mx-2 text-blue-300" target="_blank" rel="noopener noreferrer">
                         <span className="inline italic">The Oracle</span>
                     </a>
-                </div>
-                <div className="ml-4">&#62; Studying for my Master's Degree in Data Science @ TU Vienna</div>
-                <div className="ml-4">
-                    &#62; IT-Department @
-                    <a href="https://www.austriatech.at/" className="mx-2 text-blue-300" target="_blank" rel="noopener noreferrer">
-                        AustriaTech
-                    </a>
-                </div>
-                {/*todo: replace link*/}
-                <div className="ml-4">
-                    &#62; Interested in Data Science? Check out the Jupyter extension I developed for my
-                    <a href="https://github.com/LuisKolb/sideline" className="ml-2 text-blue-300" target="_blank" rel="noopener noreferrer">
-                        Bachelor's Thesis
-                    </a>
-                    !
                 </div>
             </section>
 
